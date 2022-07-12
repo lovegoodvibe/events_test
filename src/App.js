@@ -1,12 +1,23 @@
 import React, {Component} from "react";
-class App extends Component {
+import Header from "./Component/Header";
+import Body from "./Component/Body";
+class Demo extends Component {
   render() {
       return (
           <div>
-              <header >Hello React</header>
+              <Header></Header>
+              <Body
+                  name = "nguyen van a"
+                  age = "12"
+              >nong dan</Body>
+              <Body
+                  name = "nguyen van b"
+                  age = "27"
+              >giao vien</Body>
           </div>
+
       );
   }
 }
-export default App;
+export default Demo;
 
